@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.big-img img{
+  width: 100%;
+  animation: moveDown 2s ease;
+}
+
+nav a{
+  color: grey;
+  font-size: 15px;
+  margin-right: 35px;
+/* padding: 2px; */
+}
+
+nav a:hover{
+  text-decoration: none;
+color: #61CE70;
+-webkit-box-shadow: 3px 0px 34px 0px rgba(204,194,206,0.43);
+box-shadow: 3px 0px 34px 0px rgba(204,194,206,0.43);
+}
+
+.address{
+  font-size: 14px;
+  color: #929292;
+margin-top: 15px;
+margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+.rowtwo{
+margin-top: 20px;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 150px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.logo2{
+  position: absolute;
+  top: 400px;
+  right: 70px;
+  height: 110px;
+  z-index: 2;
+  animation: visiblee 7s ease;
+}
+
+.fab{
+color: #4267B2;
+display:inline-block;
+margin-left: 10px;
+margin-right:10px;
+}
+
+.fas{
+  color: #13aff0;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.parentdiv {
+  display: flex;
+  background-color: white;
+  padding-bottom: 5px;
+  font-size: 14px;
+  /* z-index: 3; */
+  /* overflow: hidden; */
+  /* margin-bottom: 0px; */
+  /* background-color: #effad3; */
+
+}
+
+.airlines {
+  height: 150px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #222;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  padding: 50px 20px 50px 20px;
+}
+
+.copyright{
+  margin-bottom: 0px;
+  padding: 15px;
+  text-align: center;
+  background-color: #1B1B1B;
+  color: #929292;
+  font-size: 13px;
+}
+
+h1{
+  margin-top: 70px;
+}
+
+.package {
+  width: 100%;
+}
+
+.turkeyimg {
+  width: 750px;
+}
+
+.facebookpage {
+  width: 240px;
+  height: 129px;
+}
+
+
+.airlineSection{
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.serviceSection button{
+  color: white;
+  background-color: #61CE70;
+  border-style: none;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+h6{
+  font-size: 13px;
+  border-width: 3px;
+  border-color: #13aff0;
+  border-style: solid;
+  border-width: 0 0 0 3px;
+  letter-spacing: 1px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+h6:hover{
+  color: #13aff0;
+}
+
+.hotelSection.col-lg-4{
+  border-radius: 1%;
+  overflow: hidden;
+}
+
+.zoomIn{
+overflow: hidden;
+}
+
+.hotels{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.hotelsimg{
+  transition: transform .2s;
+}
+
+.hotelsimg:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+ -webkit-transform: scale(1.5); /* Safari 3-8 */
+ transform: scale(1.2);
+}
+
+@keyframes moveDown{
+  0% {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes visiblee {
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+
+
+
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: #e6e6e6;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.line1{
+ background-color: #e6e6e6;
+ height: 1px;
+ width: 2px;
+}
+
+.line2{
+ background-color: #eee;
+ height: 1px;
+ width: 2px;
+}
+
+.line3{
+ background-color: #eee;
+ height: 1px;
+ width: 2px;
+}
+
+@media (max-width: 950px){
+  .nav-links{
+    width: 60%;
+  }
+    ul a li{
+      font-size: 15px;
+    }
+
+    a li{
+      margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+  .burger{
+    display: block;
+  cursor: pointer;
+  }
+
+  .nav-links{
+    display: flex;
+  background-color: black;
+  opacity: 0.8;
+  height: 92vh;
+  width: 50%;
+    position: absolute;
+    top: 8vh;
+    right: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .fadeIn{
+    transform: translateX(0%);
+  }
+
+  .move .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+  }
+
+  .move .line2{
+  opacity: 0;
+  }
+
+  .move .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
